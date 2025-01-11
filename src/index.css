@@ -18,6 +18,8 @@ body {
   margin-top: 5rem;
 }
 
+/* Header */
+
 .header {
   width: inherit;
   height: 111px;
@@ -25,7 +27,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  border-bottom: 0.01rem solid #e0e0e0;
 }
 
 .header > .header--logo {
@@ -38,4 +40,48 @@ body {
   color: #141413;
   line-height: 60px;
   margin-left: 10px;
+}
+
+/* Main */
+.main {
+  width: inherit;
+  background-color: #fafaf8;
+  padding: 67px 63px;
+}
+
+.main > .main--form {
+  display: flex;
+  justify-content: center;
+}
+
+.main > .main--form > .main--form__input {
+  width: 399px;
+  height: 38px;
+  border: 0.01rem solid #d1d5db;
+  border-radius: 6px;
+  padding: 9px 13px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 12px;
+}
+
+.main > .main--form > .main--form__button {
+  border: none;
+  width: 183px;
+  height: 38px;
+  border-radius: 6px;
+  padding: 9px 17px;
+  background-color: #141413;
+  color: white;
+  cursor: pointer;
+  transition: all 0.03s;
+}
+
+.main > .main--form > .main--form__button::before {
+  content: "+";
+  margin-right: 8px;
+}
+
+.main > .main--form > .main--form__button:hover {
+  background-color: #d17557;
 }
