@@ -15,7 +15,8 @@ body {
 
 .App {
   width: 720px;
-  margin-top: 5rem;
+  margin: 5rem 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Header */
@@ -148,4 +149,16 @@ body {
   color: white;
   cursor: pointer;
   transition: all 0.03s;
+}
+
+/* Main -- Suggested Recipe */
+.main--suggested-recipe {
+  margin-top: 48px;
+}
+
+.main--suggested-recipe > .main--suggested-recipe__heading {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 38px;
+  margin-bottom: 24px;
 }
