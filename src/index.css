@@ -42,7 +42,7 @@ body {
   margin-left: 10px;
 }
 
-/* Main */
+/* Main -- Form */
 .main {
   width: inherit;
   background-color: #fafaf8;
@@ -84,4 +84,29 @@ body {
 
 .main > .main--form > .main--form__button:hover {
   background-color: #d17557;
+}
+
+/* Main -- Ingredients List */
+.main > .main--ingredients {
+  margin-top: 48px;
+}
+
+.main > .main--ingredients > .main--ingredients__heading {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 38px;
+  margin-bottom: 24px;
+}
+
+.main > .main--ingredients > .main--ingredients__list {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #475467;
+  list-style: none;
+}
+
+.main--ingredients__list-item::before {
+  content: "•";
+  margin-right: 8px;
 }
