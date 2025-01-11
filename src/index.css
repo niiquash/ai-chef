@@ -110,3 +110,42 @@ body {
   content: "•";
   margin-right: 8px;
 }
+
+/* Main -- Get Recipe */
+.main--get-recipe {
+  margin-top: 48px;
+  padding: 30px 40px;
+  background-color: #f0efeb;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+}
+
+.main--get-recipe > div > .main--get-recipe__heading {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #141413;
+  margin-bottom: 8px;
+}
+
+.main--get-recipe > div > .main--get-recipe__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #6b7280;
+}
+
+.main--get-recipe > .main--get-recipe__button {
+  border: none;
+  width: 115px;
+  height: 38px;
+  border-radius: 6px;
+  padding: 9px 17px;
+  background-color: #d17557;
+  color: white;
+  cursor: pointer;
+  transition: all 0.03s;
+}
