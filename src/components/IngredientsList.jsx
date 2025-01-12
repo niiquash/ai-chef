@@ -1,20 +1,16 @@
 import React from "react";
 
-const IngredientsList = () => {
+const IngredientsList = ({ ingredients }) => {
+  const ingredientsList = ingredients.map((ingredient) => (
+    <li key={ingredient} className="main--ingredients__list-item">
+      {ingredient}
+    </li>
+  ));
+
   return (
     <section className="main--ingredients">
       <h2 className="main--ingredients__heading">Ingredients on hand:</h2>
-      <ul className="main--ingredients__list">
-        <li className="main--ingredients__list-item">Chicken breasts</li>
-        <li className="main--ingredients__list-item">
-          Most of the main spices
-        </li>
-        <li className="main--ingredients__list-item">Olive oil</li>
-        <li className="main--ingredients__list-item">Heavy Cream</li>
-        <li className="main--ingredients__list-item">Chicken broth</li>
-        <li className="main--ingredients__list-item">Parmesan cheese</li>
-        <li className="main--ingredients__list-item">Spinach</li>
-      </ul>
+      <ul className="main--ingredients__list">{ingredientsList}</ul>
     </section>
   );
 };
