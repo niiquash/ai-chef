@@ -162,3 +162,18 @@ body {
   line-height: 38px;
   margin-bottom: 24px;
 }
+
+.main--suggested-recipe > h3 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.main--suggestedrecipe ul li,
+.main--suggested-recipe ol li {
+  margin-bottom: 15px;
+  line-height: 150%;
+}
+
+.main--suggested-recipe p {
+  line-height: 200%;
+}
