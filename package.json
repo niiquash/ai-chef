@@ -14,7 +14,8 @@
     "@huggingface/transformers": "^3.2.4",
     "openai": "^4.78.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-markdown": "^9.0.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

@@ -32,7 +32,7 @@ const Main = () => {
       </form>
       <IngredientsList ingredients={ingredients} />
       <GetRecipe ingredients={ingredients} getRecipe={getRecipe} />
-      <ApiRecipe recip={recipe} />
+      <ApiRecipe recipe={recipe} />
     </main>
   );
 };

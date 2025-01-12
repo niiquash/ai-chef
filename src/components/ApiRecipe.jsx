@@ -1,4 +1,5 @@
 import React from "react";
+import ReactMarkdown from "react-markdown";
 
 const ApiRecipe = ({ recipe }) => {
   return (
@@ -6,7 +7,7 @@ const ApiRecipe = ({ recipe }) => {
       {recipe && (
         <section className="main--suggested-recipe">
           <h2 className="main--suggested-recipe__heading">Suggested Recipe:</h2>
-          <p>{recipe}</p>
+          <ReactMarkdown>{recipe}</ReactMarkdown>
         </section>
       )}
     </>
