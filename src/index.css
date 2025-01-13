@@ -112,6 +112,12 @@ body {
   margin-right: 8px;
 }
 
+.main--ingredients__note {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 2.8rem;
+}
+
 /* Main -- Get Recipe */
 .main--get-recipe {
   margin-top: 48px;

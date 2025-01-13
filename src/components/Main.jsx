@@ -5,13 +5,7 @@ import GetRecipe from "./GetRecipe";
 import { getRecipeFromOpenAI } from "../ai";
 
 const Main = () => {
-  const [ingredients, setIngredients] = React.useState([
-    "rice",
-    "beans",
-    "chicken",
-    "all spices",
-    "lemon",
-  ]);
+  const [ingredients, setIngredients] = React.useState([]);
   const [recipe, setRecipe] = React.useState("");
 
   const getIngredients = (formData) => {
