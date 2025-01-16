@@ -7,6 +7,13 @@ import { getRecipeFromOpenAI } from "../ai";
 const Main = () => {
   const [ingredients, setIngredients] = React.useState([]);
   const [recipe, setRecipe] = React.useState("");
+  const recipeSection = React.useRef(null);
+
+  React.useEffect(() => {
+    if (recipe !== "" && recipeSection !== null) {
+      recipeSection.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [recipe]);
 
   const getIngredients = (formData) => {
     const newIngredient = formData.get("ingredient");
@@ -32,7 +39,7 @@ const Main = () => {
       </form>
       <IngredientsList ingredients={ingredients} />
       <GetRecipe ingredients={ingredients} getRecipe={getRecipe} />
-      <ApiRecipe recipe={recipe} />
+      <ApiRecipe ref={recipeSection} recipe={recipe} />
     </main>
   );
 };
